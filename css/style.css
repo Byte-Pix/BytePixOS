@@ -17,6 +17,8 @@ h1 {
     color: #fff
 }
 
+
+
 #topbar {
     display: flex;
     justify-content: space-between;
@@ -25,9 +27,30 @@ h1 {
     border-radius: 16px;
     color: #fff;
 }
+#topbarTimeElement {
+    margin-right: 16px;
+    background-color: rgba(256, 256, 256, 0.125);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+#topbarWeather {
+    margin-left: 16px;
+    background-color: rgba(256, 256, 256, 0.25);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+#topbarName {
+    margin-left: 16px;
+    font-weight: 700;
+    background-color: rgba(256, 256, 256, 0.125);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+
 
 #welcome {
-    padding: 16px;
+    padding: 0px 0px 8px 0px;
     border-style: solid;
     width: 256px;
     border-radius: 16px;
@@ -36,4 +59,25 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
+    overflow: hidden;
+}
+#welcome h1, #welcome p {
+    margin: 0px;
+    padding: 0px;
+}
+#welcome h1, #welcome p, #welcome a, #welcome img {
+    padding: 6px;
+}
+
+#welcomeHeader {
+    display: flex;
+    align-items: center;
+    cursor: move;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0;
+    padding: 6px 12px;
+    border-bottom: 2px solid #000000;
+    box-sizing: border-box;
+    background-color: #999999;
 }
